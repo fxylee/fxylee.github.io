@@ -2,11 +2,13 @@
 
 ## RVM --- Ruby Version Manager
 
-> Ruby环境管理工具。用于管理本地多个Ruby版本环境，包括依赖的第三方插件
+> Ruby环境管理工具。用于管理本地多个Ruby版本环境，包括依赖的第三方插件  
+> 类似npm 的包n的功能
 
 ## RubyGems
 
 > Ruby 平台的包管理器，首先约定了Ruby包的结构与格式，其次提供了Ruby包的安装、移除、发布等功能，类似NodeJS的npm，但不具备包依赖管理功能。  
+> gems 是Ruby内置的，随Ruby包一起发布
 >
 > 包配置文件：`.gemspec`
 
