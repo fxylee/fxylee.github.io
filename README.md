@@ -1,3 +1,3 @@
-# fxylee.github.io
-> Description: Just Babel Notes.
+# Build & Project
+> Description: Build tools such as babel/webpack etc.
 
