@@ -86,7 +86,7 @@ end
 # 使用字面量定义数组
 arr = [3, 4, 5]
 # 字符串数组使用%w[]，而不是%w()
-arr = %w[first, two, 3td]
+arr = %w[first two 3td]
 
 f = foo.new
 

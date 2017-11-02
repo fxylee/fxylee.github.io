@@ -33,7 +33,17 @@ article.published!
 article.deleted!
 ```
 
+
 **枚举状态字段应该被添加为数据表索引**
+
+
+```ruby
+# 如果不显式的声明状态对应的数字值，rails默认从0开始输出状态
+enum status: ['draft', 'published', 'deleted']
+enum status: [:draft, :published, :deleted]
+enum status: %w[draft published deleted]
+# {'draft'=> 0, 'published'=> 1, 'deleted'=> 2}
+```
 
 ## Links
 1. [ActiveRecord Enum实战总结](http://www.bigbing.net/2017/03/07/practice-activerecord-enum/)
