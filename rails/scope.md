@@ -1,6 +1,6 @@
 # Scope
 
-一种特殊的类方法
+通过lambda定义的一种特殊的**类方法**
 
 ```ruby
   class Test < ActiveRecord::Base
