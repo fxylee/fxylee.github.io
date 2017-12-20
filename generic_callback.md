@@ -3,6 +3,10 @@
 > 过程对象 => `Proc`类
 > 将代码块`block`封装为可复用的`Proc`实例
 
+*可理解为将`block`存储在变量中，达到代码块复用的目的：`Proc`对象是可多次复用的`block`；区别在于`block`通过`yield`调用，而`Proc`代码块对象通过`call`方法调用，并且可定义和传入参数*
+
+> `Proc` objects are blocks of code that have been bound to a set of local variables. Once bound, the code may be called in different contexts and still access those variables.
+
 ## 实例`Proc`
 ```ruby
 # 显式实例化
@@ -26,7 +30,7 @@ def foo
   yield('yield')
 end
 
-# 2. 通过&指定的变量调用；必须放在所有参数后面
+# 2. 通过&指定的变量调用；必须放在所有参数后面；&符号将代码块转为了Proc实例
 def foo(&b)
   # &b 指代原始代码块；b指代Proc实例
   b.call if block_given?
@@ -47,3 +51,5 @@ foo { |arg| puts "hello #{arg}" }
 ### 参考连接
 1. [Ruby语言中的泛回调及其在C++语言中的模拟实现](http://blog.csdn.net/zwvista/article/details/1841902)
 2. [ruby 方法调用中的`＊`和`&`](http://www.jianshu.com/p/ce2ce74545d8)
+3. [ruby 中的Proc](http://www.jianshu.com/p/4ad4517ed6a8)
+4. [ruby中的Proc类的理解](http://blog.csdn.net/u010196648/article/details/19192403)
