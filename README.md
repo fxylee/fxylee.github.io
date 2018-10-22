@@ -1,2 +1,2 @@
 # fxylee.github.io
-> Description: Notes & Blog.
+> Description: Java Notes & Blog.
